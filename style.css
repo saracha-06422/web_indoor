@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=BenchNine&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400&display=swap');
+body {
+    background-color: #212121;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.menu {
+    background-color: #c47135;
+    border : none;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'BenchNine', sans-serif;
+    font-size: 1em;
+    font-size: 22px;
+    line-height: 1em;
+    margin: 5px 40px;
+    outline: none;
+    padding: 12px 40px 10px;
+    position: relative;
+    text-transform: uppercase;
+    font-weight: 400;
+    text-decoration: none;
+    border-radius: 2%;
+}
+
+.menu:before,
+.menu:after{
+    border-color: transparent;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    border-style: solid;
+    border-width: 0;
+    content: "";
+    height: 24px;
+    position: absolute;
+    width: 24px;
+}
+
+.menu:before {
+    border-color: #c47135;
+    border-top-width: 2px;
+    left: 0px;
+    top: -5px;
+}
+
+.menu:after{
+    border-bottom-width: 2px;
+    border-color: #c47135;
+    bottom: -5px;
+    right: 0;
+}
+
+.menu:hover,
+.menu.hover {
+    background-color: #c47135;
+}
+
+.menu:hover:before,
+.menu.hover:before,
+.menu:hover:after,
+.menu.hover:after {
+    height: 100%;
+    width: 100%;
+}
+
+.snip {
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin: 10px 1%;
+    min-width: 230px;
+    max-width: 315px;
+    width: 100%;
+    text-align: left;
+    line-height: 1.4em;
+    background: #141414;
+    display: block;
+    height: auto;
+    justify-content: center;
+}
+
+.snip * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+.snip img {
+    max-width: 100%;
+    vertical-align: top;
+    opacity: 0.8;
+}
+
+.snip figcaption {
+    width: 100%;
+    background-color: #141414;
+    padding: 25px;
+    position: relative;
+}
+
+.snip figcaption:before {
+    position: absolute;
+    content: '';
+    bottom: 100%;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 55px 0 0 400px;
+    border-color: transparent transparent transparent #141414;
+}
+
+.snip figcaption a {
+    padding: 5px;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size : 0.8em;
+    text-transform: uppercase;
+    margin: 10px 0;
+    display: inline-block;
+    opacity: 47%;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.snip figcaption a:hover {
+    opacity: 1;
+}
+
+.snip .profile {
+    border-radius: 50%;
+    position: absolute;
+    bottom: 100%;
+    left: 25px;
+    z-index: 1;
+    max-width: 90px;
+    opacity: 1;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+.snip .follow {
+    margin-right: 6%;
+    border-color: #2980b6;
+    color: #2980b9;
+}
+
+.snip h2 {
+    margin: 0 0 5px;
+    font-weight: 400;
+}
+
+.snip h2 span {
+    display: block;
+    font-size: 0.5em;
+    color: #2980b9;
+}
+
+.snip p {
+    margin: 0 0 10px;
+    font-size: 0.8em;
+    letter-spacing: 1px;
+    opacity: 0.8;
+}
+
+.snip:hover:before {
+    bottom:0;
+    box-shadow: 0 0 0px white;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+}
+
+.mar {
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+} 
+
+.snip2 {
+    font-family: 'BenchNine', sans-serif;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    margin: 8px;
+    min-width: 250px;
+    max-width: 310px;
+    width: 100%;
+    background-color: #0000;
+    color: #fff;
+    text-align: left;
+    font-size: 16px;
+    box-shadow:  0 0 5px rgba(0,0,0,0.15);
+}
+
+.snip2 * {
+    -webkit-transform: all 0.3s;
+    transform: all 0.3s;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.snip2 img {
+    max-width: 100%;
+    vertical-align: top;
+}
+
+.snip2 figcaption {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    background-image: linear-gradient(to top, rgba(0,0,0, 0.8) 0%, transparent 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; 
+}
+
+.snip2 h3{
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 3px 0;
+}
+
+.snip2 .title1 {
+    font-weight: 700;
+}
+
+.snip2 .title2 {
+    color: #a58e7c;
+    font-weight: 400;
+}
+
+.snip2 .title3 {
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.snip2 a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.snip2:hover img,
+.snip2.hover img {
+    -webkit-transform: scale(1.3) rotate(10deg);
+    transform: scale(1.3) rotate(10deg);
+}
+
+.room {
+    font-family: 'BenchNine', sans-serif;
+    color: #a58e7c;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 8% 0;
+}
+
+.snip3 {
+    font-family: 'BenchNine', sans-serif;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    margin: 8px;
+    min-width: 250px;
+    max-width: 450px;
+    max-height: 300px;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    text-align: left;
+    font-size: 16px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.15);
+}
+
+.snip3 {
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.snip3 img {
+    max-width: 100%;
+    vertical-align: top;
+}
+
+.snip3 figcaption {
+    position: absolute;
+    height: 75px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    overflow: hidden;
+    padding: 15px;
+    background-color: rgba(0,0,0, 0.75);
+}
+
+.snip3 h3 {
+    font-family: 'BenchNine', sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.snip3 h5 {
+    font-weight: 400;
+    font-size: 15px;
+    margin: 0;
+    text-transform: uppercase;
+    color: #bbb;
+    letter-spacing: 2px;
+}
+
+.snip3 blockquote {
+    font-family: 'Prompt', sans-serif;
+    padding: 0;
+    margin: 0;
+    font-style: italic;
+    font-size: 1em;
+}
+
+.snip3 a {
+    position:absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.snip3:hover figcaption {
+    height: calc(80%);
+}
+
+.mar2 {
+    display: block;
+}
+
+.con {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 2.5%;
+    display: flex;
+    justify-content: center;
+}
